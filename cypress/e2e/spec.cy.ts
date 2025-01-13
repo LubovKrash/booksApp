@@ -51,5 +51,7 @@ describe("my favorite books", () => {
   it("add to favorite from Books list", () => {
     cy.visit("/");
     cy.testLogin();
+    cy.contains('Add to favorite').click();
+    cy.contains('Delete from favorite').should("be.visible")
   });
 });

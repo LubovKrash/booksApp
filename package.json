@@ -29,7 +29,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test:headed:chrome": "cypress run --headed --browser chrome",
+    "test:headless:chrome": "cypress run --headless --browser chrome",
+    "test:headed:firefox": "cypress run --headed --browser firefox",
+    "test:headless:firefox": "cypress run --headless --browser firefox"
   },
   "eslintConfig": {
     "extends": "react-app"
